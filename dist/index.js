@@ -20,9 +20,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = require('react-dom');
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
+var _react3 = _interopRequireDefault(_react);
 
 /**
  * @param {ReactClass} Target The component that defines `onOutsideEvent` handler.
@@ -66,7 +64,7 @@ exports['default'] = function (Target) {
                     isOutside = undefined;
 
                 target = _this.refs.target;
-                targetElement = _reactDom2['default'].findDOMNode(target);
+                targetElement = _react3['default'].findDOMNode(target);
                 isInside = targetElement.contains(event.target) || targetElement === event.target;
                 isOutside = !isInside;
 
